@@ -8,7 +8,7 @@ packages = [{include = "{module_name}", from = "src"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9"
-hy = ">=1.0"
+hy = {version = ">=1.0", python = ">=3.9,<3.15"}
 
 [build-system]
 requires = ["poetry-core", "hy >= 1.0"]
